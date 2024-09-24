@@ -1600,7 +1600,7 @@ u32 interact_cap(struct MarioState *m, UNUSED u32 interactType, struct Object *o
 
             case MARIO_METAL_CAP:
                 capTime = 600;
-                capMusic = SEQUENCE_ARGS(4, SEQ_EVENT_METAL_CAP);
+                capMusic = SEQUENCE_ARGS(4, SEQ_TF2);
                 break;
 
             case MARIO_WING_CAP:

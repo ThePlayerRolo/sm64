@@ -425,7 +425,7 @@ void init_mario_after_warp(void) {
         set_background_music(gCurrentArea->musicParam, gCurrentArea->musicParam2, 0);
 
         if (gMarioState->flags & MARIO_METAL_CAP) {
-            play_cap_music(SEQUENCE_ARGS(4, SEQ_EVENT_METAL_CAP));
+            play_cap_music(SEQUENCE_ARGS(4, SEQ_TF2));
         }
 
         if (gMarioState->flags & (MARIO_VANISH_CAP | MARIO_WING_CAP)) {
@@ -1178,18 +1178,14 @@ s32 init_level(void) {
         if (gCurrentArea != NULL) {
             reset_camera(gCurrentArea->camera);
 
-            if (gCurrDemoInput != NULL) {
+        if (gCurrDemoInput != NULL) {
+            set_mario_action(gMarioState, ACT_IDLE, 0);
+        } else if (gDebugLevelSelect == 0) {
+            if (gMarioState->action != ACT_UNINITIALIZED) {
                 set_mario_action(gMarioState, ACT_IDLE, 0);
-            } else if (!gDebugLevelSelect) {
-                if (gMarioState->action != ACT_UNINITIALIZED) {
-                    if (save_file_exists(gCurrSaveFileNum - 1)) {
-                        set_mario_action(gMarioState, ACT_IDLE, 0);
-                    } else {
-                        set_mario_action(gMarioState, ACT_INTRO_CUTSCENE, 0);
-                        val4 = TRUE;
-                    }
-                }
-            }
+    }
+}
+
         }
 
         if (val4) {
@@ -1276,6 +1272,7 @@ s32 lvl_set_current_level(UNUSED s16 arg0, s32 levelNum) {
     sWarpCheckpointActive = FALSE;
     gCurrLevelNum = levelNum;
     gCurrCourseNum = gLevelToCourseNumTable[levelNum - 1];
+			if (gCurrLevelNum == LEVEL_PSS) return 0;
 
     if (gCurrDemoInput != NULL || gCurrCreditsEntry != NULL || gCurrCourseNum == COURSE_NONE) {
         return 0;

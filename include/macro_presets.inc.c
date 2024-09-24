@@ -199,7 +199,7 @@ static struct MacroPreset sMacroObjectPresets[] = {
     /* macro_haunted_chair_1             */ { bhvHauntedChair, MODEL_HAUNTED_CHAIR, 0 }, // unused
     /* macro_haunted_chair_2             */ { bhvHauntedChair, MODEL_HAUNTED_CHAIR, 0 },
     /* macro_haunted_chair_3             */ { bhvHauntedChair, MODEL_HAUNTED_CHAIR, 0 }, // unused
-    /* macro_boo_1                       */ { bhvGhostHuntBoo, MODEL_BOO, BOO_BP_GHOST_HUNT }, // unused
+    /* macro_boo_1                       */ { bhvBoo, MODEL_BOO, 0}, // unused
     /* macro_boo_2                       */ { bhvGhostHuntBoo, MODEL_BOO, BOO_BP_GHOST_HUNT }, // unused
     /* macro_boo_group                   */ { bhvCourtyardBooTriplet, MODEL_BOO, 0 }, // unused
     /* macro_boo_with_cage               */ { bhvBooWithCage, MODEL_BOO, 0 }, // unused

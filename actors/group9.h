@@ -81,4 +81,8 @@ extern const Gfx small_key_seg5_dl_05006A28[];
 extern const Gfx small_key_seg5_dl_05006A48[];
 extern const Gfx small_key_seg5_dl_05006A68[];
 
+#include "boo_custom/geo_header.h"
+
+#include "King_Boo/geo_header.h"
+
 #endif

@@ -19,6 +19,7 @@
 #define SEG_GODDARD_POOL_OFFSET 0x52000 // Offset from right side of pool
 #define SEG_GODDARD       (SEG_POOL_END - SEG_GODDARD_POOL_OFFSET)
 
+#define USE_EXT_RAM
 #ifndef USE_EXT_RAM /* Default: Runs out of memory quickly when importing custom assets. */
 
 #define RDRAM_END         0x80400000

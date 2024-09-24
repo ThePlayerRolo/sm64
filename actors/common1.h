@@ -250,4 +250,28 @@ extern const Gfx wooden_signpost_seg3_dl_0302DCD0[];
 extern const Gfx wooden_signpost_seg3_dl_0302DD08[];
 extern const Collision wooden_signpost_seg3_collision_0302DD80[];
 
+#include "star/geo_header.h"
+
+#include "yellow_coin/geo_header.h"
+
+#include "red_coin/geo_header.h"
+
+#include "blue_coin/geo_header.h"
+
+#include "yellowsuitcase/geo_header.h"
+
+#include "redsuitcase/geo_header.h"
+
+#include "brownsuitcase/geo_header.h"
+
+#include "Posion1UP/geo_header.h"
+
+#include "Ultra1UP/geo_header.h"
+
+#include "redsuitcase/collision_header.h"
+
+#include "yellowsuitcase/collision_header.h"
+
+#include "brownsuitcase/collision_header.h"
+
 #endif

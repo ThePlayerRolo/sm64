@@ -17,7 +17,6 @@
 
 #include "make_const_nonconst.h"
 #include "levels/intro/header.h"
-
 const LevelScript level_intro_splash_screen[] = {
     INIT_LEVEL(),
     FIXED_LOAD(/*loadAddr*/ _goddardSegmentStart, /*romStart*/ _goddardSegmentRomStart, /*romEnd*/ _goddardSegmentRomEnd),
@@ -40,7 +39,7 @@ const LevelScript level_intro_splash_screen[] = {
     CMD2A(/*unk2*/ 1),
     CLEAR_LEVEL(),
     SLEEP(/*frames*/ 2),
-    EXIT_AND_EXECUTE(/*seg*/ 0x14, _introSegmentRomStart, _introSegmentRomEnd, level_intro_mario_head_regular),
+    EXIT_AND_EXECUTE(  0x14, _introSegmentRomStart, _introSegmentRomEnd, script_intro_L1),
 };
 
 const LevelScript level_intro_mario_head_regular[] = {

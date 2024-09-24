@@ -31,6 +31,7 @@ void bhv_collect_star_loop(void) {
     if (o->oInteractStatus & INT_STATUS_INTERACTED) {
         mark_obj_for_deletion(o);
         o->oInteractStatus = 0;
+        //Has_Seen_Dialouge = 0;
     }
 }
 

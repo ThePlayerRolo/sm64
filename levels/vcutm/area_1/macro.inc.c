@@ -1,0 +1,23 @@
+const MacroObject vcutm_area_1_macro_objs[] = {
+	MACRO_OBJECT(macro_mr_i, 0, -3098, 390, -102),
+	MACRO_OBJECT(macro_mr_i, 0, -2318, 390, -102),
+	MACRO_OBJECT(macro_mr_i, 0, -1665, 390, -102),
+	MACRO_OBJECT(macro_fire_spitter, 0, 527, 331, -635),
+	MACRO_OBJECT(macro_fire_spitter, 0, -2328, 352, 482),
+	MACRO_OBJECT(macro_fire_spitter, 0, -2940, 352, 482),
+	MACRO_OBJECT(macro_fire_spitter, 0, -3499, 352, 482),
+	MACRO_OBJECT(macro_fire_spitter, 0, -1614, 352, 482),
+	MACRO_OBJECT(macro_fire_spitter, 0, -4613, 352, 482),
+	MACRO_OBJECT(macro_fire_spitter, 0, -5233, 352, 482),
+	MACRO_OBJECT(macro_fire_spitter, 0, -6046, 352, 482),
+	MACRO_OBJECT(macro_fire_spitter, 0, 495, 337, 625),
+	MACRO_OBJECT(macro_fire_spitter, 0, -2320, 390, -690),
+	MACRO_OBJECT(macro_fire_spitter, 0, -2932, 390, -690),
+	MACRO_OBJECT(macro_fire_spitter, 0, -3491, 390, -690),
+	MACRO_OBJECT(macro_fire_spitter, 0, -1606, 390, -690),
+	MACRO_OBJECT(macro_fire_spitter, 0, -4605, 390, -690),
+	MACRO_OBJECT(macro_fire_spitter, 0, -5225, 390, -690),
+	MACRO_OBJECT(macro_fire_spitter, 0, -6038, 390, -690),
+	MACRO_OBJECT_END(),
+};
+

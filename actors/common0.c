@@ -79,3 +79,7 @@ UNUSED static const u64 binid_17 = 17;
 
 #include "koopa_shell/model.inc.c"
 UNUSED static const u64 binid_18 = 18;
+
+#include "bobomb_buddy_custom/model.inc.c"
+#include "bobomb_custom/model.inc.c"
+#include "pizza/model.inc.c"

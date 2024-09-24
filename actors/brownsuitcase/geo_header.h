@@ -1,0 +1,14 @@
+extern const GeoLayout brownsuitcase_geo[];
+extern Lights1 brownsuitcase_Suitcase_Top_lights;
+extern u8 brownsuitcase_suitcase_i8[];
+extern u8 brownsuitcase_SuitCase_Top_ia8[];
+extern Vtx brownsuitcase_brownsuitcase_mesh_layer_1_vtx_0[32];
+extern Gfx brownsuitcase_brownsuitcase_mesh_layer_1_tri_0[];
+extern Vtx brownsuitcase_brownsuitcase_mesh_layer_4_vtx_0[4];
+extern Gfx brownsuitcase_brownsuitcase_mesh_layer_4_tri_0[];
+extern Gfx mat_brownsuitcase_f3dlite_material_002[];
+extern Gfx mat_revert_brownsuitcase_f3dlite_material_002[];
+extern Gfx mat_brownsuitcase_Suitcase_Top[];
+extern Gfx mat_revert_brownsuitcase_Suitcase_Top[];
+extern Gfx brownsuitcase_brownsuitcase_mesh_layer_1[];
+extern Gfx brownsuitcase_brownsuitcase_mesh_layer_4[];

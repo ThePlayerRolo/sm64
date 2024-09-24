@@ -5,7 +5,7 @@ struct UnusedChuckyaData {
     f32 unk4;
     f32 unk8;
 };
-
+s32 sNumKilledChuckyas;
 struct UnusedChuckyaData sUnusedChuckyaData[] = {
     { 2, 0.f,  1.f },
     { 2, 10.f, 1.f },
@@ -219,15 +219,22 @@ void chuckya_act_3(void) {
         o->oAction = 0;
     }
 }
-
+void chuckya_death_spawn_star(int ChuckyasRequired) {
+    if (gCurrLevelNum == LEVEL_CASTLE) {
+        sNumKilledChuckyas++;
+        if (sNumKilledChuckyas == ChuckyasRequired) {
+            spawn_default_star(0,0,0);
+        }
+    }
+}
 void chuckya_act_2(void) {
     if (o->oMoveFlags & (OBJ_MOVE_HIT_WALL | OBJ_MOVE_MASK_IN_WATER | OBJ_MOVE_LANDED)) {
         obj_mark_for_deletion(o);
+        chuckya_death_spawn_star(5);
         obj_spawn_loot_yellow_coins(o, 5, 20.0f);
         spawn_mist_particles_with_sound(SOUND_OBJ_CHUCKYA_DEATH);
     }
 }
-
 void (*sChuckyaActions[])(void) = {
     chuckya_act_0,
     chuckya_act_1,

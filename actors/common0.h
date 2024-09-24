@@ -191,4 +191,10 @@ extern const GeoLayout test_platform_geo[];
 extern const Gfx unknown_seg8_dl_08026260[];
 extern const Collision unknown_seg8_collision_080262F8[];
 
+#include "bobomb_buddy_custom/geo_header.h"
+
+#include "bobomb_custom/geo_header.h"
+
+#include "pizza/geo_header.h"
+
 #endif

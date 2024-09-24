@@ -1,0 +1,14 @@
+extern const GeoLayout redsuitcase_geo[];
+extern Lights1 redsuitcase_Suitcase_Top_001_lights;
+extern u8 redsuitcase_suitcase_i8[];
+extern u8 redsuitcase_SuitCase_Top_ia8[];
+extern Vtx redsuitcase_redsuitcase_mesh_layer_1_vtx_0[32];
+extern Gfx redsuitcase_redsuitcase_mesh_layer_1_tri_0[];
+extern Vtx redsuitcase_redsuitcase_mesh_layer_4_vtx_0[4];
+extern Gfx redsuitcase_redsuitcase_mesh_layer_4_tri_0[];
+extern Gfx mat_redsuitcase_f3dlite_material_003[];
+extern Gfx mat_revert_redsuitcase_f3dlite_material_003[];
+extern Gfx mat_redsuitcase_Suitcase_Top_001[];
+extern Gfx mat_revert_redsuitcase_Suitcase_Top_001[];
+extern Gfx redsuitcase_redsuitcase_mesh_layer_1[];
+extern Gfx redsuitcase_redsuitcase_mesh_layer_4[];

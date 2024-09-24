@@ -167,7 +167,7 @@
 
 /* Hidden 1-Up */
 #define /*0x0F4*/ oHidden1UpNumTouchedTriggers OBJECT_FIELD_S32(0x1B)
-
+/* Hidden 1-Up */
 /* Activated Back and Forth Platform */
 #define /*0x0F4*/ oActivatedBackAndForthPlatformMaxOffset    OBJECT_FIELD_F32(0x1B)
 #define /*0x0F8*/ oActivatedBackAndForthPlatformOffset       OBJECT_FIELD_F32(0x1C)
@@ -246,6 +246,7 @@
 
 /* Big Boo */
 #define /*0x1AC*/ oBigBooNumMinionBoosKilled OBJECT_FIELD_S32(0x49)
+
 
 /* Bookend */
 #define /*0x0F4*/ oBookendUnkF4 OBJECT_FIELD_S32(0x1B)

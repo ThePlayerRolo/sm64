@@ -84,3 +84,15 @@ UNUSED static const u64 binid_21 = 21;
 
 #include "tree/model.inc.c"
 UNUSED static const u64 binid_22 = 22;
+
+#include "yellow_coin/model.inc.c"
+#include "red_coin/model.inc.c"
+#include "blue_coin/model.inc.c"
+#include "yellowsuitcase/model.inc.c"
+#include "redsuitcase/model.inc.c"
+#include "brownsuitcase/model.inc.c"
+#include "Posion1UP/model.inc.c"
+#include "Ultra1UP/model.inc.c"
+#include "redsuitcase/collision.inc.c"
+#include "yellowsuitcase/collision.inc.c"
+#include "brownsuitcase/collision.inc.c"

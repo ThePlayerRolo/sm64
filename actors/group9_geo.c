@@ -14,3 +14,6 @@
 #include "mad_piano/geo.inc.c"
 #include "boo/geo.inc.c"
 #include "haunted_cage/geo.inc.c"
+
+#include "boo_custom/geo.inc.c"
+#include "King_Boo/geo.inc.c"

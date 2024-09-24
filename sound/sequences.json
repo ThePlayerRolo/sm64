@@ -34,5 +34,16 @@
     "1F_cutscene_victory": ["1A"],
     "20_cutscene_ending": ["23"],
     "21_menu_file_select": ["24"],
-    "22_cutscene_lakitu": {"ifdef": ["VERSION_US", "VERSION_EU", "VERSION_SH", "VERSION_CN"], "banks": ["1B"]}
+    "22_cutscene_lakitu": {"ifdef": ["VERSION_US", "VERSION_EU", "VERSION_SH", "VERSION_CN"], "banks": ["1B"]},
+    "23_Warp_Zone": ["11"],
+    "24_BewareFMushrooms": ["25"],
+    "25_smw_ghost_house": ["10","21"],
+    "26_LMTheme": ["25"],
+    "27_Athletic": ["11"],
+    "28_Pizzatron": ["25"],
+    "29_MainAreaTheme": ["25"],
+    "2A_TF2Theme": ["18"],
+    "2B_Boo_Waltz": ["25"],
+    "2C_KingBooRematch": ["24"]
 }
+//"2C_KingBooRematch"

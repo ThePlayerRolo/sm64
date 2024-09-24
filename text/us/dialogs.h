@@ -16,46 +16,41 @@
 #define GIVE_UP "give"
 #endif
 
-DEFINE_DIALOG(DIALOG_000, 1, 6, 30, 200, _("\
-Wow! You're smack in the\n\
-middle of the battlefield.\n\
-You'll find the Power\n\
-Stars that Bowser stole\n\
-inside the painting\n\
-worlds.\n\
-First, talk to the\n\
-Bob-omb Buddy. (Press [B]\n\
-to talk.) He'll certainly\n\
-help you out, and so will\n\
-his " COMRADES " in other\n\
-areas.\n\
-To read signs, stop, face\n\
-them and press [B]. Press [A]\n\
-or [B] to scroll ahead. You\n\
-can talk to some other\n\
-characters by facing them\n\
-and pressing [B]."))
+DEFINE_DIALOG(DIALOG_000, 1, 4, 30, 200, _("\
+Hey, this is my Funhouse,\n\
+don't make fun of its\n\
+looks, ok?\n\
+I do competions here every\n\
+couple of months.\n\
+This competion's theme\n\
+is based on Delfino\n\
+Plaza's secret parkour\n\
+area's found by tourists.\n\
+The prize is two strange\n\
+power stars I found on the\n\
+road.\n\
+Oh you need them?\n\
+Then earn them,\n\
+no pressure.\n\
+Good Luck!"))
 
 DEFINE_DIALOG(DIALOG_001, 1, 4, 95, 200, _("\
-Watch out! If you wander\n\
-around here, you're liable\n\
-to be " PLASTERED " by a\n\
-water bomb!\n\
-Those enemy Bob-ombs love\n\
-to fight, and they're\n\
-always finding ways to\n\
-attack.\n\
-This meadow has become\n\
-a battlefield ever since\n\
-the Big Bob-omb got his\n\
-paws on the Power Star.\n\
-Can you recover the Star\n\
-for us? Cross the bridge\n\
-and go left up the path\n\
-to find the Big Bob-omb.\n\
-Please come back to see\n\
-me after you've retrieved\n\
-the Power Star!"))
+Hello! The kingdom in\n\
+front of you is the\n\
+First Try Hills.\n\
+While the place really\n\
+isn't a kingdom,\n\
+the place that houses\n\
+the portal looks like one.\n\
+However, Bowser took the\n\
+stars from it.\n\
+The place is in\n\
+huge trouble, Mario.\n\
+Can you go and\n\
+save it before Bowser\n\
+destroys it?\n\
+We're counting on you,\n\
+Mario. Good Luck!"))
 
 DEFINE_DIALOG(DIALOG_002, 1, 4, 95, 200, _("\
 Hey, you! It's dangerous\n\
@@ -224,14 +219,12 @@ Do you want to Save?\n\
 //You Bet//Not Now"))
 
 DEFINE_DIALOG(DIALOG_015, 1, 4, 30, 200, _("\
-You can punch enemies to\n\
-knock them down. Press [A]\n\
-to jump, [B] to punch.\n\
-Press [A] then [B] to Kick.\n\
-To pick something up,\n\
-press [B], too. To throw\n\
-something you're holding,\n\
-press [B] again."))
+There are secret rifts\n\
+here that lead to\n\
+intresting areas.\n\
+I heard one of them\n\
+has the Vanish Cap.\n\
+Can you find them?"))
 
 DEFINE_DIALOG(DIALOG_016, 1, 3, 30, 200, _("\
 Hop on the shiny shell and\n\
@@ -1111,11 +1104,14 @@ Now let me be! I have a\n\
 date! I cannot be late\n\
 for tea!"))
 
-DEFINE_DIALOG(DIALOG_085, 1, 5, 30, 200, _("\
-You don't stand a ghost\n\
-of a chance in this house.\n\
-If you walk out of here,\n\
-you deserve...\n\
+DEFINE_DIALOG(DIALOG_085, 1, 3, 30, 200, _("\
+HA! You're stuck in my\n\
+illusion forever now, just\n\
+like your silly brother.\n\
+HOWEVER!\n\
+If you manage to defeat\n\
+me you get an\n\
+escape and....\n\
 ...a Ghoul Medal..."))
 
 DEFINE_DIALOG(DIALOG_086, 1, 3, 30, 200, _("\
@@ -1229,7 +1225,10 @@ It's one-on-one, with a\n\
 fiery finish for the loser!"))
 
 DEFINE_DIALOG(DIALOG_098, 1, 2, 95, 200, _("\
-Come on in here...\n\
+Oh, so you followed me...\n\
+...heh, heh, heh...\n\
+Maybe its time for\n\
+a rematch....\n\
 ...heh, heh, heh..."))
 
 // unused
@@ -1504,14 +1503,10 @@ Right: Work Elevator\n\
 /// Hazy Maze"))
 
 DEFINE_DIALOG(DIALOG_127, 3, 4, 30, 200, _("\
-Underground Lake\n\
-Right: Metal Cave\n\
-Left: Abandoned Mine\n\
-///(Closed)\n\
-A gentle sea dragon lives\n\
-here. Pound on his back to\n\
-make him lower his head.\n\
-Don't become his lunch."))
+First Try Hills\n\
+Ahead: Toad's Funhouse\n\
+Right: Posion Forest\n\
+Behind: Town"))
 
 DEFINE_DIALOG(DIALOG_128, 1, 4, 95, 200, _("\
 You must fight with\n\

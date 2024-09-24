@@ -1,6 +1,9 @@
 // boo.inc.c
 
 #define SPAWN_CASTLE_BOO_STAR_REQUIREMENT 12
+int Has_Seen_Dialouge = 0;
+int Random_Star_Placement = 0.00;
+
 
 static struct ObjectHitbox sBooGivingStarHitbox = {
     /* interactType:      */ 0,
@@ -13,6 +16,7 @@ static struct ObjectHitbox sBooGivingStarHitbox = {
     /* hurtboxRadius:     */ 40,
     /* hurtboxHeight:     */ 60,
 };
+
 
 // Relative positions
 static s16 sCourtyardBooTripletPositions[][3] = {
@@ -514,8 +518,14 @@ static void big_boo_act_0(void) {
         cur_obj_unhide();
 
         o->oBooTargetOpacity = 255;
-        o->oBooBaseScale = 3.0f;
-        o->oHealth = 3;
+        if (cur_obj_has_behavior(bhvBalconyBigBoo)) {
+            o->oBooBaseScale = 6.0f;
+            o->oHealth = 6;
+        } else {
+            o->oBooBaseScale = 3.0f;
+            o->oHealth = 3;
+        }
+        
 
         cur_obj_scale(3.0f);
         cur_obj_become_tangible();
@@ -572,11 +582,21 @@ static void big_boo_act_2(void) {
 }
 
 static void big_boo_spawn_ghost_hunt_star(void) {
-    spawn_default_star(980.0f, 1100.0f, 250.0f);
+    spawn_default_star(0, 0, 0);
 }
-
+void random_star_placemnt(void) {
+    Random_Star_Placement = random_float();
+    
+}
 static void big_boo_spawn_balcony_star(void) {
-    spawn_default_star(700.0f, 3200.0f, 1900.0f);
+    random_star_placemnt();
+    if (Random_Star_Placement < 0.5)  {
+        spawn_default_star(300, 700, 200);
+    } else if(Random_Star_Placement >= 0.5 && Random_Star_Placement < 0.6) {
+        spawn_default_star(-1000, 700, -400);
+    } else {
+        spawn_default_star(-400,700,-1000);
+    }
 }
 
 static void big_boo_spawn_merry_go_round_star(void) {
@@ -635,9 +655,9 @@ static void big_boo_act_4(void) {
         if (o->oTimer > 60 && o->oDistanceToMario < 600.0f) {
             obj_set_pos(o, 973, 0, 717);
 
-            spawn_object_relative(0, 0, 0,    0, o, MODEL_BBH_STAIRCASE_STEP, bhvBooStaircase);
-            spawn_object_relative(1, 0, 0, -200, o, MODEL_BBH_STAIRCASE_STEP, bhvBooStaircase);
-            spawn_object_relative(2, 0, 0,  200, o, MODEL_BBH_STAIRCASE_STEP, bhvBooStaircase);
+            //spawn_object_relative(0, 0, 0,    0, o, MODEL_BBH_STAIRCASE_STEP, bhvBooStaircase);
+            //spawn_object_relative(1, 0, 0, -200, o, MODEL_BBH_STAIRCASE_STEP, bhvBooStaircase);
+            //spawn_object_relative(2, 0, 0,  200, o, MODEL_BBH_STAIRCASE_STEP, bhvBooStaircase);
 
             obj_mark_for_deletion(o);
         }
@@ -656,7 +676,13 @@ static void (*sBooGivingStarActions[])(void) = {
 
 void bhv_big_boo_loop(void) {
     //PARTIAL_UPDATE
-
+    if (Has_Seen_Dialouge == 0) {
+        if (cur_obj_has_behavior(bhvBalconyBigBoo)) {
+            if (cur_obj_update_dialog(MARIO_DIALOG_LOOK_UP, DIALOG_FLAG_TEXT_DEFAULT, DIALOG_098, 0)) {
+                Has_Seen_Dialouge = 1;
+            }
+        }
+    }
     obj_set_hitbox(o, &sBooGivingStarHitbox);
 
     o->oGraphYOffset = o->oBooBaseScale * 60.0f;
@@ -666,8 +692,8 @@ void bhv_big_boo_loop(void) {
     cur_obj_move_standard(78);
 
     boo_approach_target_opacity_and_update_scale();
-
     o->oInteractStatus = 0;
+
 }
 
 static void boo_with_cage_act_0(void) {

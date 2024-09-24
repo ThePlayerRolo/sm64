@@ -44,7 +44,7 @@
 #define MODEL_LEVEL_GEOMETRY_15                0x15
 #define MODEL_LEVEL_GEOMETRY_16                0x16
 
-#define MODEL_BOB_BUBBLY_TREE                  0x17        // bubbly_tree_geo
+#define MODEL_BOB_BUBBLY_TREE                  0x5F        // bubbly_tree_geo
 #define MODEL_WDW_BUBBLY_TREE                  0x17        // bubbly_tree_geo
 #define MODEL_CASTLE_GROUNDS_BUBBLY_TREE       0x17        // bubbly_tree_geo
 #define MODEL_WF_BUBBLY_TREE                   0x17        // bubbly_tree_geo
@@ -56,7 +56,7 @@
 #define MODEL_SSL_PALM_TREE                    0x1B        // palm_tree_geo
 #define MODEL_CASTLE_CASTLE_DOOR_UNUSED        0x1C        // castle_door_geo - unused, original id
 #define MODEL_CASTLE_WOODEN_DOOR_UNUSED        0x1D        // wooden_door_geo - unused, original id
-#define MODEL_BBH_HAUNTED_DOOR                 0x1D        // haunted_door_geo
+#define MODEL_BBH_HAUNTED_DOOR                 0xE7       // haunted_door_geo
 #define MODEL_HMC_WOODEN_DOOR                  0x1D        // wooden_door_geo
 #define MODEL_UNKNOWN_DOOR_1E                  0x1E        // referenced in special presets, undefined
 #define MODEL_HMC_METAL_DOOR                   0x1F        // metal_door_geo
@@ -92,6 +92,7 @@
 #define MODEL_BBH_MESH_ELEVATOR                0x3A        // geo_bbh_000628
 #define MODEL_BBH_MERRY_GO_ROUND               0x3B        // geo_bbh_000640
 #define MODEL_BBH_WOODEN_TOMB                  0x3C        // geo_bbh_000658
+#define MODEL_BBH_RIPPLES                       0x3D
 
 // ccm
 #define MODEL_CCM_ROPEWAY_LIFT                 0x36        // ccm_geo_0003D0
@@ -379,14 +380,15 @@
 #define MODEL_CAP_SWITCH_BASE             0x56        // cap_switch_base_seg5_dl_05003120
 
 // group 9
-#define MODEL_BOO                         0x54        // boo_geo
+#define MODEL_BOO                         0x54      // boo_geo
 #define MODEL_BETA_BOO_KEY                0x55        // small_key_geo
 #define MODEL_HAUNTED_CHAIR               0x56        // haunted_chair_geo
 #define MODEL_MAD_PIANO                   0x57        // mad_piano_geo
 #define MODEL_BOOKEND_PART                0x58        // bookend_part_geo
 #define MODEL_BOOKEND                     0x59        // bookend_geo
 #define MODEL_HAUNTED_CAGE                0x5A        // haunted_cage_geo
-
+#define MODEL_BOO_CUSTOM                  0xE6
+#define MODEL_KING_BOO                    0xE8
 // group 10
 #define MODEL_BIRDS                       0x54        // birds_geo
 #define MODEL_YOSHI                       0x55        // yoshi_geo
@@ -448,15 +450,20 @@
 
 // other models
 #define MODEL_YELLOW_COIN                 0x74        // yellow_coin_geo
-#define MODEL_YELLOW_COIN_NO_SHADOW       0x75        // yellow_coin_no_shadow_geo
+//#define MODEL_YELLOW_COIN_NO_SHADOW       0x75        // yellow_coin_no_shadow_geo
 #define MODEL_BLUE_COIN                   0x76        // blue_coin_geo
-#define MODEL_BLUE_COIN_NO_SHADOW         0x77        // blue_coin_no_shadow_geo
+//#define MODEL_BLUE_COIN_NO_SHADOW         0x77        // blue_coin_no_shadow_geo
 #define MODEL_HEART                       0x78        // heart_geo
 #define MODEL_TRANSPARENT_STAR            0x79        // transparent_star_geo
 #define MODEL_STAR                        0x7A        // star_geo
 #define MODEL_TTM_SLIDE_EXIT_PODIUM       0x7B        // ttm_geo_000DF4
 #define MODEL_WOODEN_SIGNPOST             0x7C        // wooden_signpost_geo
 #define MODEL_UNKNOWN_7D                  0x7D        // referenced in macro presets. Unknown usage
+#define MODEL_RED_SUITCASE                0x7E        // yellow_coin_geo
+#define MODEL_ULTRA1UP                    0xE2
+#define MODEL_POSION_MUSHROOM             0xE3
+#define MODEL_YELLOW_SUITCASE             0xE4
+#define MODEL_BROWN_SUITCASE              0xE5
 // find me
 #define MODEL_CANNON_BARREL               0x7F        // cannon_barrel_geo
 #define MODEL_CANNON_BASE                 0x80        // cannon_base_geo
@@ -528,6 +535,9 @@
 #define MODEL_SEAWEED                     0xC1        // seaweed_geo
 #define MODEL_AMP                         0xC2        // dAmpGeo
 #define MODEL_BOBOMB_BUDDY                0xC3        // bobomb_buddy_geo
+#define MODEL_BOBOMB_CUSTOM               0xC4 
+#define MODEL_BOBOMB_BUDDY_CUSTOM         0xC5
+#define MODEL_PIZZA                       0xC6
 // find me
 // find me
 // find me
@@ -548,7 +558,7 @@
 #define MODEL_CASTLE_STAR_DOOR_8_STARS    0xD5        // castle_geo_000F00
 #define MODEL_CASTLE_STAR_DOOR_70_STARS   0xD6        // castle_geo_000F00
 #define MODEL_RED_COIN                    0xD7        // red_coin_geo
-#define MODEL_RED_COIN_NO_SHADOW          0xD8        // red_coin_no_shadow_geo
+//#define MODEL_RED_COIN_NO_SHADOW          0xD8        // red_coin_no_shadow_geo
 #define MODEL_METAL_BOX                   0xD9        // metal_box_geo
 #define MODEL_METAL_BOX_DL                0xDA        // metal_box_dl
 #define MODEL_NUMBER                      0xDB        // number_geo

@@ -3,6 +3,9 @@
 
 #include "types.h"
 
+/* fast64 object exports get inserted here */
+extern const BehaviorScript bhvBbhripples[];
+
 #define BPARAM1(param) (((param) & 0xFF) << 24)
 #define BPARAM2(param) (((param) & 0xFF) << 16)
 #define BPARAM3(param) (((param) & 0xFF) << 8)
@@ -547,5 +550,11 @@ extern const BehaviorScript bhvEndBirds1[];
 extern const BehaviorScript bhvEndBirds2[];
 extern const BehaviorScript bhvIntroScene[];
 extern const BehaviorScript bhvUnusedFakeStar[];
-
+extern const BehaviorScript bhvUltra1Up[];
+extern const BehaviorScript bhvPosion1Up[];
+extern const BehaviorScript bhvRedSuitcase[];
+extern const BehaviorScript bhvYellowSuitcase[];
+extern const BehaviorScript bhvBrownSuitcase[];
+extern const BehaviorScript bhvPizzaGrabbable[];
+extern const BehaviorScript bhvPizzaStarHitbox[];
 #endif // BEHAVIOR_DATA_H

@@ -82,6 +82,11 @@ const LevelScript level_main_scripts_entry[] = {
     LOAD_MODEL_FROM_GEO(MODEL_BLUE_FLAME,              blue_flame_geo),
     LOAD_MODEL_FROM_GEO(MODEL_BURN_SMOKE,              burn_smoke_geo),
     LOAD_MODEL_FROM_GEO(MODEL_LEAVES,                  leaves_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_RED_SUITCASE,    redsuitcase_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_YELLOW_SUITCASE, yellowsuitcase_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_BROWN_SUITCASE,  brownsuitcase_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_ULTRA1UP, Ultra1UP_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_POSION_MUSHROOM, Posion1UP_geo),
     LOAD_MODEL_FROM_GEO(MODEL_PURPLE_MARBLE,           purple_marble_geo),
     LOAD_MODEL_FROM_GEO(MODEL_FISH,                    fish_geo),
     LOAD_MODEL_FROM_GEO(MODEL_FISH_SHADOW,             fish_shadow_geo),
@@ -94,9 +99,9 @@ const LevelScript level_main_scripts_entry[] = {
     LOAD_MODEL_FROM_GEO(MODEL_WHITE_PUFF,              white_puff_geo),
     LOAD_MODEL_FROM_DL (MODEL_WHITE_PARTICLE_DL,       white_particle_dl,       LAYER_ALPHA),
     LOAD_MODEL_FROM_GEO(MODEL_WHITE_PARTICLE,          white_particle_geo),
-    LOAD_MODEL_FROM_GEO(MODEL_YELLOW_COIN_NO_SHADOW,   yellow_coin_no_shadow_geo),
+    //LOAD_MODEL_FROM_GEO(MODEL_YELLOW_COIN_NO_SHADOW,   yellow_coin_no_shadow_geo),
     LOAD_MODEL_FROM_GEO(MODEL_BLUE_COIN,               blue_coin_geo),
-    LOAD_MODEL_FROM_GEO(MODEL_BLUE_COIN_NO_SHADOW,     blue_coin_no_shadow_geo),
+    //LOAD_MODEL_FROM_GEO(MODEL_BLUE_COIN_NO_SHADOW,     blue_coin_no_shadow_geo),
     LOAD_MODEL_FROM_GEO(MODEL_MARIOS_WINGED_METAL_CAP, marios_winged_metal_cap_geo),
     LOAD_MODEL_FROM_GEO(MODEL_MARIOS_METAL_CAP,        marios_metal_cap_geo),
     LOAD_MODEL_FROM_GEO(MODEL_MARIOS_WING_CAP,         marios_wing_cap_geo),
@@ -107,7 +112,7 @@ const LevelScript level_main_scripts_entry[] = {
     LOAD_MODEL_FROM_GEO(MODEL_RED_FLAME_SHADOW,        red_flame_shadow_geo),
     LOAD_MODEL_FROM_GEO(MODEL_1UP,                     mushroom_1up_geo),
     LOAD_MODEL_FROM_GEO(MODEL_RED_COIN,                red_coin_geo),
-    LOAD_MODEL_FROM_GEO(MODEL_RED_COIN_NO_SHADOW,      red_coin_no_shadow_geo),
+    //LOAD_MODEL_FROM_GEO(MODEL_RED_COIN_NO_SHADOW,      red_coin_no_shadow_geo),
     LOAD_MODEL_FROM_GEO(MODEL_NUMBER,                  number_geo),
     LOAD_MODEL_FROM_GEO(MODEL_EXPLOSION,               explosion_geo),
     LOAD_MODEL_FROM_GEO(MODEL_DIRT_ANIMATION,          dirt_animation_geo),
@@ -193,6 +198,9 @@ const LevelScript script_func_global_1[] = {
     LOAD_MODEL_FROM_GEO(MODEL_FLYGUY,                  flyguy_geo),
     LOAD_MODEL_FROM_GEO(MODEL_CHUCKYA,                 chuckya_geo),
     LOAD_MODEL_FROM_GEO(MODEL_TRAJECTORY_MARKER_BALL,  bowling_ball_track_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_BOBOMB_CUSTOM, bobomb_custom_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_BOBOMB_BUDDY_CUSTOM, bobomb_buddy_custom_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_PIZZA, pizza_geo),
     RETURN(),
 };
 
@@ -263,13 +271,15 @@ const LevelScript script_func_global_9[] = {
 };
 
 const LevelScript script_func_global_10[] = {
-    LOAD_MODEL_FROM_GEO(MODEL_BOO,                     boo_geo),
+     LOAD_MODEL_FROM_GEO(MODEL_BOO,                     boo_geo),
     LOAD_MODEL_FROM_GEO(MODEL_BETA_BOO_KEY,            small_key_geo),
     LOAD_MODEL_FROM_GEO(MODEL_HAUNTED_CHAIR,           haunted_chair_geo),
     LOAD_MODEL_FROM_GEO(MODEL_MAD_PIANO,               mad_piano_geo),
     LOAD_MODEL_FROM_GEO(MODEL_BOOKEND_PART,            bookend_part_geo),
     LOAD_MODEL_FROM_GEO(MODEL_BOOKEND,                 bookend_geo),
     LOAD_MODEL_FROM_GEO(MODEL_HAUNTED_CAGE,            haunted_cage_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_BOO_CUSTOM, boo_custom_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_KING_BOO, King_Boo_geo),
     RETURN(),
 };
 

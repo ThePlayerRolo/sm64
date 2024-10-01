@@ -53,21 +53,10 @@ We're counting on you,\n\
 Mario. Good Luck!"))
 
 DEFINE_DIALOG(DIALOG_002, 1, 4, 95, 200, _("\
-Hey, you! It's dangerous\n\
-ahead, so listen up! Take\n\
-my advice.\n\
-\n\
-Cross the two\n\
-bridges ahead, then\n\
-watch for falling\n\
-water bombs.\n\
-The Big Bob-omb at the\n\
-top of the mountain is\n\
-very powerful--don't let\n\
-him grab you!\n\
-We're Bob-omb Buddies,\n\
-and we're on your side.\n\
-You can talk to us\n\
+Which path will you take,\n\
+left or right? Both \n\
+paths lead to the\n\
+same goal, a power star\n\
 whenever you'd like to!"))
 
 DEFINE_DIALOG(DIALOG_003, 1, 5, 95, 200, _("\
@@ -1267,17 +1256,29 @@ away. Instead, sneak up\n\
 behind them and punch."))
 
 DEFINE_DIALOG(DIALOG_103, 1, 4, 95, 200, _("\
-Upon four towers\n\
-one must alight...\n\
-Then at the peak\n\
-shall shine the light..."))
+Which path will you take,\n\
+left or right? Both \n\
+paths lead to the\n\
+same goal, a power star\n\
+whenever you'd like to!"))
 
 DEFINE_DIALOG(DIALOG_104, 1, 5, 30, 200, _("\
-The shadowy star in front\n\
-of you is a 『Star\n\
-Marker.』 When you collect\n\
-all 8 Red Coins, the Star\n\
-will appear here."))
+You wannna get the\n\
+power star at the\n\
+end, correct? Well,\n\
+you gotta know something.\n\
+Some of the platforms are\n\
+part invisble! Yes, I know\n\
+that may seem impossible to\n\
+cross, but the thing is\n\
+most platforms are still are\n\
+a surface you can stand on.\n\
+So keep that in mind, while\n\
+you get that power star!\n\
+I also heard your bro\n\
+Luigi's up ahead\n\
+maybe you should go save\n\
+him or something."))
 
 DEFINE_DIALOG(DIALOG_105, 1, 3, 95, 200, _("\
 Ready for blastoff! Come\n\

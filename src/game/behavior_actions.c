@@ -268,3 +268,6 @@ s32 set_obj_anim_with_accel_and_sound(s16 a0, s16 a1, s32 a2) {
 #include "behaviors/PosionMushroom.inc.c"
 #include "behaviors/pizza_grabbable.inc.c"
 #include "behaviors/pizza_get_star_hitbox.inc.c"
+#include "behaviors/luigi.inc.c"
+#include "behaviors/custom_platform.inc.c"
+

@@ -109,6 +109,7 @@ static void toad_message_faded(void) {
     }
 }
 
+
 static void toad_message_opaque(void) {
     if (gCurrentObject->oDistanceToMario > 700.0f) {
         gCurrentObject->oToadMessageState = TOAD_MESSAGE_FADING;
@@ -144,18 +145,19 @@ static void toad_message_talking(void) {
     }
 }
 
+
 static void toad_message_opacifying(void) {
     if ((gCurrentObject->oOpacity += 6) == 255) {
         gCurrentObject->oToadMessageState = TOAD_MESSAGE_OPAQUE;
     }
 }
 
+
 static void toad_message_fading(void) {
     if ((gCurrentObject->oOpacity -= 6) == 81) {
         gCurrentObject->oToadMessageState = TOAD_MESSAGE_FADED;
     }
 }
-
 void bhv_toad_message_loop(void) {
     if (gCurrentObject->header.gfx.node.flags & GRAPH_RENDER_ACTIVE) {
         gCurrentObject->oInteractionSubtype = 0;
@@ -178,7 +180,6 @@ void bhv_toad_message_loop(void) {
         }
     }
 }
-
 void bhv_toad_message_init(void) {
     s32 saveFlags = save_file_get_flags();
     s32 starCount = save_file_get_total_star_count(gCurrSaveFileNum - 1, COURSE_MIN - 1, COURSE_MAX - 1);
@@ -215,7 +216,11 @@ void bhv_toad_message_init(void) {
         obj_mark_for_deletion(gCurrentObject);
     }
 }
-
+void bhv_luigi_message_init(void) {
+    gCurrentObject->oToadMessageRecentlyTalked = FALSE;
+    gCurrentObject->oToadMessageState = TOAD_MESSAGE_FADED;
+    gCurrentObject->oOpacity = 81;
+}
 static void star_door_unlock_spawn_particles(s16 angleOffset) {
     struct Object *sparkleParticle = spawn_object(gCurrentObject, 0, bhvSparkleSpawn);
 

@@ -33,6 +33,7 @@ static void boo_stop(void) {
 
 void bhv_boo_init(void) {
     o->oBooInitialMoveYaw = o->oMoveAngleYaw;
+    Has_Seen_Dialouge = 0;
 }
 
 static s32 boo_should_be_stopped(void) {

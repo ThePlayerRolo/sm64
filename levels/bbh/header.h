@@ -115,4 +115,8 @@ extern const LevelScript level_bbh_entry[];
 #include "levels/bbh/header.inc.h"
 #include "levels/bbh/BBHRipples/geo_header.h"
 
+#include "levels/bbh/KBI_platform/collision_header.h"
+
+#include "levels/bbh/KBI_platform/geo_header.h"
+
 #endif

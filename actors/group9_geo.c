@@ -17,3 +17,4 @@
 
 #include "boo_custom/geo.inc.c"
 #include "King_Boo/geo.inc.c"
+#include "Luigi/geo.inc.c"

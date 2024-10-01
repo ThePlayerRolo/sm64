@@ -35,3 +35,6 @@ UNUSED static const u64 binid_6 = 6;
 
 #include "boo_custom/model.inc.c"
 #include "King_Boo/model.inc.c"
+#include "Luigi/model.inc.c"
+#include "Luigi/anims/data.inc.c"
+#include "Luigi/anims/table.inc.c"

@@ -72,3 +72,5 @@
 
 #include "levels/bbh/leveldata.inc.c"
 #include "levels/bbh/BBHRipples/model.inc.c"
+#include "levels/bbh/KBI_platform/collision.inc.c"
+#include "levels/bbh/KBI_platform/model.inc.c"

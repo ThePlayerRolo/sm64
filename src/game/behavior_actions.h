@@ -556,6 +556,10 @@ void bhv_posion1up_loop(void);
 void bhv_pizza_grabbable_init(void);
 void bhv_pizza_grabbable_loop(void);
 void bhv_pizza_star_hitbox_loop(void);
+void bhv_luigi_init(void);
+void bhv_luigi_loop(void);
+void bhv_custom_platform_loop(void);
+void bhv_custom_platform_init(void);
 Gfx *geo_move_mario_part_from_parent(s32 run, UNUSED struct GraphNode *node, Mat4 mtx);
 
 // Bowser

@@ -967,6 +967,10 @@
 #define /*0x10C*/ oToadMessageRecentlyTalked OBJECT_FIELD_S32(0x21)
 #define /*0x110*/ oToadMessageState          OBJECT_FIELD_S32(0x22)
 
+#define /*0x108*/ oLuigiMessageDialogID       OBJECT_FIELD_U32(0x20)
+#define /*0x10C*/ oLuigiMessageRecentlyTalked OBJECT_FIELD_S32(0x21)
+#define /*0x110*/ oLuigiMessageState          OBJECT_FIELD_S32(0x22)
+
 /* Tox Box */
 #define /*0x1AC*/ oToxBoxActionTable OBJECT_FIELD_VPTR(0x49)
 #define /*0x1B0*/ oToxBoxActionStep  OBJECT_FIELD_S32(0x4A)

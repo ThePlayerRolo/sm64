@@ -92,7 +92,8 @@
 #define MODEL_BBH_MESH_ELEVATOR                0x3A        // geo_bbh_000628
 #define MODEL_BBH_MERRY_GO_ROUND               0x3B        // geo_bbh_000640
 #define MODEL_BBH_WOODEN_TOMB                  0x3C        // geo_bbh_000658
-#define MODEL_BBH_RIPPLES                       0x3D
+#define MODEL_BBH_RIPPLES                      0x3D
+#define MODEL_KBI_PLATFORM                     0x3E 
 
 // ccm
 #define MODEL_CCM_ROPEWAY_LIFT                 0x36        // ccm_geo_0003D0
@@ -389,6 +390,7 @@
 #define MODEL_HAUNTED_CAGE                0x5A        // haunted_cage_geo
 #define MODEL_BOO_CUSTOM                  0xE6
 #define MODEL_KING_BOO                    0xE8
+#define MODEL_LUIGI_CUSTOM                0xE9
 // group 10
 #define MODEL_BIRDS                       0x54        // birds_geo
 #define MODEL_YOSHI                       0x55        // yoshi_geo

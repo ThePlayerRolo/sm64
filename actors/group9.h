@@ -85,4 +85,8 @@ extern const Gfx small_key_seg5_dl_05006A68[];
 
 #include "King_Boo/geo_header.h"
 
+#include "Luigi/geo_header.h"
+
+
+#include "Luigi/anim_header.h"
 #endif

@@ -2155,7 +2155,17 @@ const BehaviorScript bhvCheckerboardPlatformSub[] = {
         CALL_NATIVE(bhv_checkerboard_platform_loop),
     END_LOOP(),
 };
-
+const BehaviorScript bhvKBICheckerboardPlatform[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, (OBJ_FLAG_COMPUTE_DIST_TO_MARIO | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
+    LOAD_COLLISION_DATA(KBI_platform_collision),
+    SET_HOME(),
+    CALL_NATIVE(bhv_custom_platform_init),
+    BEGIN_LOOP(),
+        CALL_NATIVE(bhv_custom_platform_loop),
+        CALL_NATIVE(load_object_collision_model),
+    END_LOOP(),
+};
 const BehaviorScript bhvBowserKeyUnlockDoor[] = {
     BEGIN(OBJ_LIST_DEFAULT),
     LOAD_ANIMATIONS(oAnimations, bowser_key_seg3_anims_list),
@@ -3793,7 +3803,21 @@ const BehaviorScript bhvBobombBuddy[] = {
         CALL_NATIVE(bhv_bobomb_buddy_loop),
     END_LOOP(),
 };
-
+const BehaviorScript bhvLuigi[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, (OBJ_FLAG_COMPUTE_ANGLE_TO_MARIO | OBJ_FLAG_HOLDABLE | OBJ_FLAG_COMPUTE_DIST_TO_MARIO | OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
+    LOAD_ANIMATIONS(oAnimations, Luigi_anims),
+    SET_INTERACT_TYPE(INTERACT_TEXT),
+    DROP_TO_FLOOR(),
+    SET_HITBOX(/*Radius*/ 100, /*Height*/ 60),
+    ANIMATE(0),
+    SET_HOME(),
+    SET_INT(oIntangibleTimer, 0),
+    CALL_NATIVE( bhv_luigi_init),
+    BEGIN_LOOP(),
+        CALL_NATIVE(bhv_luigi_loop),
+    END_LOOP(),
+};
 // The only difference between this and the previous behavior are what oFlags and oBobombBuddyRole are set to, why didn't they just use a jump?
 const BehaviorScript bhvBobombBuddyOpensCannon[] = {
     BEGIN(OBJ_LIST_GENACTOR),

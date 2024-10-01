@@ -25,3 +25,4 @@
 
 #include "levels/bbh/geo.inc.c"
 #include "levels/bbh/BBHRipples/geo.inc.c"
+#include "levels/bbh/KBI_platform/geo.inc.c"

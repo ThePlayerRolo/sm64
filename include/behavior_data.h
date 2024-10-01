@@ -557,4 +557,6 @@ extern const BehaviorScript bhvYellowSuitcase[];
 extern const BehaviorScript bhvBrownSuitcase[];
 extern const BehaviorScript bhvPizzaGrabbable[];
 extern const BehaviorScript bhvPizzaStarHitbox[];
+extern const BehaviorScript bhvLuigi[];
+extern const BehaviorScript bhvKBICheckerboardPlatform[];
 #endif // BEHAVIOR_DATA_H

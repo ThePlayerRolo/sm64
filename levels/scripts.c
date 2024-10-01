@@ -280,6 +280,7 @@ const LevelScript script_func_global_10[] = {
     LOAD_MODEL_FROM_GEO(MODEL_HAUNTED_CAGE,            haunted_cage_geo),
     LOAD_MODEL_FROM_GEO(MODEL_BOO_CUSTOM, boo_custom_geo),
     LOAD_MODEL_FROM_GEO(MODEL_KING_BOO, King_Boo_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_LUIGI_CUSTOM, Luigi_geo),
     RETURN(),
 };
 
